@@ -13,6 +13,6 @@ int main(int argc, char *argv[]) {
     serv_addr.sin_addr.s_addr = htonl(INADDR_ANY);
     serv_addr.sin_port = htons(atoi(argv[1]));
     bind(serv_sock, (struct sockaddr*)&serv_addr, sizeof(serv_addr));
-    
+
     return 0;
 }
